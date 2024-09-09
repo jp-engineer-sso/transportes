@@ -1,0 +1,31 @@
+<button mat-button [matMenuTriggerFor]="aboveMenu">Hernancito</button>
+<mat-menu #aboveMenu="matMenu" yPosition="above">
+  <button mat-menu-item>Sera correspondido con un Muy Buen Servicio</button>
+  <button mat-menu-item>Mejor de lo que salio no puede llegar porque es imposible en esta epoca dada la tecnologia.</button>
+  <button mat-menu-item>Hay una sola forma de saberlo</button>
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="belowMenu">Clientes Felices</button>
+<mat-menu #belowMenu="matMenu" yPosition="below">
+  <button mat-menu-item>2022</button>
+  <a routerLink="/contact">
+    <button mat-menu-item>
+      2023
+    </button>
+  </a>
+  
+</mat-menu>
+
+<button mat-button [matMenuTriggerFor]="beforeMenu">Contactame</button>
+<mat-menu #beforeMenu="matMenu" xPosition="before">
+  <button mat-menu-item>Era chiste, JAJAJA</button>
+</mat-menu>
+
+<!--
+<button mat-button [matMenuTriggerFor]="afterMenu">After</button>
+<mat-menu #afterMenu="matMenu" xPosition="after">
+  <button mat-menu-item>Item 1</button>
+  <button mat-menu-item>Item 2</button>
+</mat-menu>
+
+-->
